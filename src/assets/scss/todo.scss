@@ -1,0 +1,59 @@
+@import './__variables.scss';
+
+.todo-list-container {
+  padding: 150px 0;
+  width: 100%;
+  .todo-input {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    input {
+      height: 25px;
+      border: none;
+      width: 100%;
+      border-bottom: 1px solid $main-color;
+      background-color: transparent;
+      &:active, &:focus {
+        outline: none;
+      }
+    }
+    .addItem-btn {
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: $main-color;
+      &:active, &:focus {
+        outline: none;
+      }
+    }
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    max-width: 500px;
+    background: rgb(67 203 162 / 70%);
+    margin: 0 auto;
+    margin-top: 20px;
+    li {
+      padding: 10px 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        height: 20px;
+      }
+      &.empty-list-item {
+        justify-content: center;
+      }
+      &.completed-item {
+        text-decoration: line-through;
+        color: #cccccc;
+      }
+      .complete-icon, .remove-icon {
+        cursor: pointer
+      }
+    }
+  }
+}
