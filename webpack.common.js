@@ -9,7 +9,7 @@ const pages =
 
 module.exports = {
   entry: {
-    app: './src/js/app.js',
+    index: './src/js/index.js',
     todo: './src/js/todo.js'
   },
   output: {

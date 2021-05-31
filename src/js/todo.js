@@ -1,3 +1,4 @@
+import '../assets/scss/app.scss';
 import '../assets/scss/todo.scss';
 import close from '../assets/svg/close.svg';
 import check from '../assets/svg/check.svg';
